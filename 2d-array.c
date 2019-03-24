@@ -17,7 +17,6 @@
 		grades[1][2] = 80;
 		grades[1][3] = 82;
 		grades[1][4] = 87;
-
 		
 		for (i = 0; i < 2 ; i++) {
 			average = 0;
