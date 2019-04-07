@@ -5,3 +5,4 @@ Just open terminal and ```make <filename>``` then execute binary ```./<filename>
 For windows, you have to compile directly. Because Windows doesn't support makefile.<br>
 In the future, I might use cmake instead.
 ## License
+It's just an example files. So [no license](https://github.com/kanokkorn/c-sketch/blob/master/LICENSE)
