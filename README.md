@@ -1,4 +1,5 @@
-# c-sketch&nbsp;[![CodeFactor](https://www.codefactor.io/repository/github/kanokkorn/c-sketch/badge)](https://www.codefactor.io/repository/github/kanokkorn/c-sketch)&nbsp;
+# c-sketch
+&nbsp;[![CodeFactor](https://www.codefactor.io/repository/github/kanokkorn/c-sketch/badge)](https://www.codefactor.io/repository/github/kanokkorn/c-sketch)&nbsp;
 
 Sometimes, I code to improve my skill. This is the result of what I've learned.
 ## Usage
