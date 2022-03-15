@@ -50,4 +50,6 @@ int main() {
     remove_by_value(&test_list, 3);
 
     print_list(test_list);
+    return 0;
 }
+

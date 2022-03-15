@@ -1,14 +1,15 @@
 #include <stdio.h>
 
 typedef struct person{
-    char * name;
-    int age;
+  char * name;
+  int age;
 }person;
 
 int main() {
-    person john;
+  person john;
 
-    john.name = "John";
-    john.age = 27;
-    printf("%s is %d years old.", john.name, john.age);
+  john.name = "John";
+  john.age = 27;
+  printf("%s is %d years old.", john.name, john.age);
 }
+

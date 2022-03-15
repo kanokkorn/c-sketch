@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+
 int main() {
   char * first_name = "John";
   char last_name[20] = "Doe";
@@ -16,3 +17,4 @@ int main() {
   printf("%s\n",name);
   return 0;
 }
+

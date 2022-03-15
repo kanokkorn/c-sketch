@@ -1,12 +1,13 @@
-CC = gcc
+cc = cc
+cflags = -std=c11 -Wall -Wextra -Wconversion -pedantic -O3
 
-SRCS = $(wildcard *.c)
+src = $(wildcard *.c)
 
-PROGS = $(patsubst %.c,%,$(SRCS))
+prog = $(patsubst %.c,%,$(src))
 
-all: $(PROGS)
+all: $(prog)
 
 %: %.c
-	$(CC) $(CFLAGS) -o $@ $<
-clean: 
-	rm -f $(PROGS)
+	$(cc) $(cflags) -o $@ $<
+clean:
+	rm -f $(prog)
