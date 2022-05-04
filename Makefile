@@ -1,13 +1,13 @@
-cc = cc
-cflags = -std=c11 -Wall -Wextra -Wconversion -pedantic -O3
+CC = cc
+CFLAGS = -std=c99 -Wall -Wextra -Wconversion -pedantic -O3
 
-src = $(wildcard *.c)
+SRC = $(wildcard *.c)
 
-prog = $(patsubst %.c,%,$(src))
+PROG = $(patsubst %.c,%,$(SRC))
 
-all: $(prog)
+all: $(PROG)
 
 %: %.c
-	$(cc) $(cflags) -o $@ $<
+	$(CC) $(CFLAGS) -o $@ $<
 clean:
-	rm -f $(prog)
+	$(RM) -f $(PROG)
