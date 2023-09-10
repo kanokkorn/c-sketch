@@ -1,13 +1,11 @@
-CC = cc
-CFLAGS = -std=c99 -Wall -Wextra -Wconversion -pedantic -O3
+SRCS != ls *.c
 
-SRCS = $(wildcard *.c)
+# PROGS = $(patsubst %.c,%,$(SRCS))
+PROGS = ${patsubst %.c,%,${SRCS}}
 
-PROGS = $(patsubst %.c,%,$(SRCS))
-
-all: $(PROGS)
+all: ${PROGS}
 
 %: %.c
-			$(CC) $(CFLAGS)  -o $@ $<
+			${CC} ${CFLAGS}  -o $@ $<
 clean:
-			rm -rf *.o $(PROGS)
+			rm -rf *.o ${PROGS}
