@@ -5,6 +5,8 @@
 #include <sys/socket.h>
 #include <sys/un.h>
 
+const char* quit = "exit";
+
 int main() {
   // Create a socket.
   int sockfd = socket(AF_UNIX, SOCK_STREAM, 0);
@@ -38,13 +40,17 @@ int main() {
     }
 
     char buffer[1024];
-    ssize_t bytes_read = read(clientfd, buffer, sizeof(buffer));
+    ssize_t bytes_read = read(clientfd, buffer, sizeof(buffer)+1);
     if (bytes_read < 0) {
       perror("read");
       exit(1);
     }
 
     printf("Received message from client: %s\n", buffer);
+    if (!strcmp(quit, buffer)) {
+      printf("exit received. quiting...");
+      exit(1);
+    }
 
     close(clientfd);
   }
