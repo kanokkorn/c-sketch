@@ -1,3 +1,4 @@
+# bsd make compatible makefile
 SRCS != ls *.c
 
 # PROGS = $(patsubst %.c,%,$(SRCS))
