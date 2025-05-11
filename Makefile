@@ -7,6 +7,6 @@ PROGS = ${patsubst %.c,%,${SRCS}}
 all: ${PROGS}
 
 %: %.c
-			${CC} ${CFLAGS}  -o $@ $<
+	${CC} ${CFLAGS}  -o $@ $<
 clean:
-			rm -rf *.o ${PROGS}
+	rm -rf *.o ${PROGS}
